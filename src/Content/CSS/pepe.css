@@ -1,0 +1,79 @@
+/******************html/body***********************/
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+    background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+}
+
+/****************Application-content************************/
+.root-content{
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+.application-content{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.application-content-nav{
+    position: relative;
+    width: 100%;
+    min-height: 10%;
+    background:rgb(6, 145, 226);
+    display: flex;
+}
+.application-content-view{
+    position: relative;
+    width: 100%;
+    height: 615px;
+
+    display: flex;
+}
+/******************nav-content**********************/
+.nav-content{
+
+}
+.nav-content-menu{
+    position: relative;
+    display: flex;
+    margin: 5px;
+    list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav-content-menu-item{
+    margin-left:8px;
+    width: fit-content;
+    height: 20px;
+    padding: 5px;
+}
+.nav-content-menu-item:hover{
+    background: rgb(6, 105, 163);
+    cursor: pointer; 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/******************profilepanel***********************/
+.profilePanel-content{
+    position: relative;
+    min-width: 250px;
+    height: 615px;
+    background: rgba(160, 160, 17,0.1);
+}
+/******************tabpanel***********************/
+.tabpanel-content{
+    position: relative;
+    min-width: 100%;
+    height: 615px;
+    background: rgba(245, 245, 3,0.1);
+}
