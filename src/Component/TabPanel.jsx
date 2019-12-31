@@ -6,10 +6,11 @@ class TabPanel extends React.Component
     constructor(props)
     {
         super(props);
+        this.Name=props.Name;
     }
     render(){
         return(
-            <div className="tabpanel-content">
+            <div id={this.Name} className="tabpanel-content">
 
             </div>
         );

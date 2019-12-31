@@ -4,9 +4,6 @@ import NavBar from './Component/NavBar';
 import ProfilePanel from './Component/ProfilePanel';
 import TabPanel from './Component/TabPanel';
 
-
-
-
 class Application extends Component
 {
     constructor(props)
@@ -23,7 +20,7 @@ class Application extends Component
             </div>
             <div className="application-content-view">
                 <ProfilePanel/>
-                <TabPanel/>
+                <TabPanel Name="TabPanel1"/>
             </div>
 
           </div>
