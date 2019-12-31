@@ -70,6 +70,21 @@ a{
     height: 615px;
     background: rgba(160, 160, 17,0.1);
 }
+.profilePanel-content-avatar{
+    position: relative;
+    border-radius: 50%;
+    background: grey;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20px;
+}
+.profilePanel-content-avatar-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
 /******************tabpanel***********************/
 .tabpanel-content{
     position: relative;
