@@ -15,7 +15,7 @@ class NavBar extends React.Component{
         this.MenuTitles.forEach(item => {
             MenuTitlesGenerated.push(React.createElement(
               "li",
-              {class:"nav-content-menu-item"},
+              {className:"nav-content-menu-item"},
               <a href="#">{item}</a>
             ));
         });

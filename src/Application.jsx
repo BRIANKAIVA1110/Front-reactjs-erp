@@ -14,6 +14,18 @@ class Application extends Component
             "Articulos",
             "Clientes",
             "Proveedores",
+            "Articulos",
+            "Clientes",
+            "Proveedores",
+            "Articulos",
+            "Clientes",
+            "Proveedores",
+            "Articulos",
+            "Clientes",
+            "Proveedores",
+            "Articulos",
+            "Clientes",
+            "Proveedores",
           ]
         };
     }
@@ -29,7 +41,7 @@ class Application extends Component
             </div>
             <div className="application-content-view">
                 <ProfilePanel/>
-                <TabPanel Name="TabPanel1"/>
+                {/* <TabPanel Name="TabPanel1"/> */}
             </div>
 
           </div>
