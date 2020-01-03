@@ -9,14 +9,23 @@ class Application extends Component
     constructor(props)
     {
         super(props);
+        this.state ={
+          MenuTitles:[
+            "Articulos",
+            "Clientes",
+            "Proveedores",
+          ]
+        };
     }
-
 
     render() {
         return (
           <div className="application-content">
             <div className="application-content-nav">
-                <NavBar/>
+                <NavBar 
+                  Name="NavBar1"
+                  MenuTitles={this.state.MenuTitles}
+                />
             </div>
             <div className="application-content-view">
                 <ProfilePanel/>

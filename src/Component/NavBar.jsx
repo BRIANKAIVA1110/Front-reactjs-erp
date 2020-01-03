@@ -1,18 +1,36 @@
 import React from 'react';
 
-const NavBar=()=>{
+class NavBar extends React.Component{
 
+    constructor(props)
+    {
+        super(props);
+        this.MenuTitles = props.MenuTitles;
+
+    }
+
+    init(){
+        var MenuTitlesGenerated=[];
+        if(this.MenuTitles!=null)
+        this.MenuTitles.forEach(item => {
+            MenuTitlesGenerated.push(React.createElement(
+              "li",
+              {class:"nav-content-menu-item"},
+              <a href="#">{item}</a>
+            ));
+        });
+
+        return MenuTitlesGenerated;
+    }
+    render(){
         return(
             <nav className="nav-content">
                 <ul className="nav-content-menu">
-                    <li className="nav-content-menu-item"><a href="#">Articulos</a></li>
-                    <li className="nav-content-menu-item"><a href="#">Clientes</a></li>
-                    <li className="nav-content-menu-item"><a href="#">Proveedores</a></li>
-                    <li className="nav-content-menu-item"><a href="#">Ventas</a></li>
-                    <li className="nav-content-menu-item"><a href="#">Seguridad</a></li>
+                    {this.init()}
                 </ul>
             </nav>
         );
+    }
 }
 
 export default NavBar;
