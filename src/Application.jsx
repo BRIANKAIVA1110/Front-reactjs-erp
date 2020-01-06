@@ -10,22 +10,16 @@ class Application extends Component
     {
         super(props);
         this.state ={
-          MenuTitles:[
-            "Articulos",
-            "Clientes",
-            "Proveedores",
-            "Articulos",
-            "Clientes",
-            "Proveedores",
-            "Articulos",
-            "Clientes",
-            "Proveedores",
-            "Articulos",
-            "Clientes",
-            "Proveedores",
-            "Articulos",
-            "Clientes",
-            "Proveedores",
+          MenuTitles:
+          [
+            {
+            "title":"Articulos",
+            "panelView": "Articulos",
+            },
+            {
+              "title":"cliente",
+              "panelView": "Clientes",
+            },
           ]
         };
     }
@@ -41,9 +35,8 @@ class Application extends Component
             </div>
             <div className="application-content-view">
                 <ProfilePanel/>
-                {/* <TabPanel Name="TabPanel1"/> */}
+                <TabPanel/>
             </div>
-
           </div>
         );
       }

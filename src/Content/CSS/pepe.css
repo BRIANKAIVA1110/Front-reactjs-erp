@@ -1,7 +1,7 @@
 /******************html/body***********************/
 html,body{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 body{
     margin: 0;
@@ -11,22 +11,22 @@ body{
     radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
     background-color:grey;
     background-size:16px 16px;
-
 }
 
 /****************Application-content************************/
 .root-content{
-    min-width: 100%;
-    min-height: 950px;
-
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 .application-content{
-    position: relative;
+   
+    height: 100vh;
 }
 .application-content-nav{
     position: relative;
-    width: auto;
-    min-height: 10%;
+    min-width: 100vw;
+    min-height: 10px;
     background:rgb(6, 145, 226);
     display: flex;
 }
@@ -34,7 +34,7 @@ body{
     position: relative;
     margin-top: 7px;
     width: 100%;
-    min-height: auto;
+    height: 90vh;
     display: flex;
 }
 /******************nav-content**********************/
@@ -89,6 +89,8 @@ a{
 .tabpanel-content{
     position: relative;
     min-width: 100%;
-    height: 615px;
-    background: rgba(245, 245, 3,0.1);
+    height: auto;
+    margin-left: 5px;
+    
+    background: rgba(199, 199, 189, 0.1);
 }

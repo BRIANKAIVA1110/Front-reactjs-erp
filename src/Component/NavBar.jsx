@@ -13,10 +13,11 @@ class NavBar extends React.Component{
         var MenuTitlesGenerated=[];
         if(this.MenuTitles!=null)
         this.MenuTitles.forEach(item => {
+            // debugger;
             MenuTitlesGenerated.push(React.createElement(
               "li",
               {className:"nav-content-menu-item"},
-              <a href="#">{item}</a>
+              <a href="#" onClick={item.panelView}>{item.title}</a>
             ));
         });
 
