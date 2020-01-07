@@ -9,30 +9,25 @@ class Application extends Component
     constructor(props)
     {
         super(props);
+        this.Name = "pepe";
         this.state ={
-          MenuTitles:[
-            "Articulos",
-            "Clientes",
-            "Proveedores",
-            "Articulos",
-            "Clientes",
-            "Proveedores",
-            "Articulos",
-            "Clientes",
-            "Proveedores",
-            "Articulos",
-            "Clientes",
-            "Proveedores",
-            "Articulos",
-            "Clientes",
-            "Proveedores",
+          MenuTitles:
+          [
+            {
+            "title":"Articulos",
+            "panelView": "Articulos",
+            },
+            {
+              "title":"cliente",
+              "panelView": "Clientes",
+            },
           ]
         };
     }
 
     render() {
         return (
-          <div className="application-content">
+          <div className="application-content" id={this.Name}>
             <div className="application-content-nav">
                 <NavBar 
                   Name="NavBar1"
@@ -41,9 +36,8 @@ class Application extends Component
             </div>
             <div className="application-content-view">
                 <ProfilePanel/>
-                {/* <TabPanel Name="TabPanel1"/> */}
+                <TabPanel Name="TabPanel1"/>
             </div>
-
           </div>
         );
       }
