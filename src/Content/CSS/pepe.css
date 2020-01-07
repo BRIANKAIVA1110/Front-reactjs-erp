@@ -88,9 +88,9 @@ a{
 /******************tabpanel***********************/
 .tabpanel-content{
     position: relative;
-    min-width: 100%;
+    min-width: 82%;
     height: auto;
     margin-left: 5px;
     
-    background: rgba(199, 199, 189, 0.1);
+    background: rgba(235, 235, 223, 0.7);
 }

@@ -9,6 +9,7 @@ class Application extends Component
     constructor(props)
     {
         super(props);
+        this.Name = "pepe";
         this.state ={
           MenuTitles:
           [
@@ -26,7 +27,7 @@ class Application extends Component
 
     render() {
         return (
-          <div className="application-content">
+          <div className="application-content" id={this.Name}>
             <div className="application-content-nav">
                 <NavBar 
                   Name="NavBar1"
@@ -35,7 +36,7 @@ class Application extends Component
             </div>
             <div className="application-content-view">
                 <ProfilePanel/>
-                <TabPanel/>
+                <TabPanel Name="TabPanel1"/>
             </div>
           </div>
         );
