@@ -21,6 +21,14 @@ class Application extends Component
               "title":"cliente",
               "panelView": "Clientes",
             },
+            {
+              "title":"Articulos",
+              "panelView": "Articulos",
+            },
+            {
+              "title":"Articulos",
+              "panelView": "Articulos",
+            },
           ]
         };
     }
@@ -32,6 +40,7 @@ class Application extends Component
                 <NavBar 
                   Name="NavBar1"
                   MenuTitles={this.state.MenuTitles}
+                  TabPanelContentId="TabPanel1"
                 />
             </div>
             <div className="application-content-view">
