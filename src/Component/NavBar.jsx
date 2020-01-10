@@ -43,6 +43,7 @@ class NavBar extends React.Component{
             {Name:this.CantChildTabPanel++},
             null
         );
+        
         this.ChildTabPanel.push(child);
         var content = React.createElement(
             "div",
@@ -51,7 +52,7 @@ class NavBar extends React.Component{
         );
         
         debugger;
-        ReactDOM.render(content,tabPanel);
+        ReactDOM.render(content,tabPanel);//solo permite renderizar un componente
     }
 
     
